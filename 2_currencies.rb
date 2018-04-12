@@ -57,7 +57,6 @@ require 'yaml'
 def get_data
   page = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))
   currency = page.css("td.currency-name")
-  print currency
   values = page.css("a.price")
   currencies = []
   prices = []
@@ -73,4 +72,4 @@ def get_data
   data = Hash[currencies.zip(prices.map {|i| i.include?(',') ? (i.split /, /) : i})]
 end
 
- get_data
+ puts get_data

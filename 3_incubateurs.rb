@@ -11,13 +11,17 @@ end
 
 
 def get_startups
+
   page = Nokogiri::HTML(open("http://www.alloweb.org/annuaire-startups/annuaire-incubateurs-startups/"))
   name_startup = []
+
   page.css('div#filter-2 div form div[10] option').each do |namo|
     name_startup << namo.content
   end
+
   redirect = page.css('div#primary div[3] a.listing-row-image-link')
   link_to_link_to_website = []
+
   page.css('div#filter-2 div form div[10] option').each do |link|
     link_to_link_to_website << "http://www.alloweb.org/annuaire-startups/annuaire-incubateurs-startups/#{link['value'].gsub('liste-startups-incubees-par-', '')}"
   end
@@ -32,13 +36,7 @@ def get_startups
   #   end
   # end
 
-  # puts link_to_website
-
-
-
   startups = Hash[name_startup.zip(link_to_link_to_website.map {|i| i.include?('-') ? i : i} ) ]
-
-  # puts startups
 
 end
 
