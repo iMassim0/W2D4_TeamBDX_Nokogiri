@@ -4,9 +4,11 @@ require 'open-uri'
 require 'yaml'
 
 def get_link(url)
+
   page_2 = Nokogiri::HTML(open(url))
   site_startup = page_2.css("div#listing-detail-section-description div div[1] div p[5]")
   return site_startup
+
 end
 
 

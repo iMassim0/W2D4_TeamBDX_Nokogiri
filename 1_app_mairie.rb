@@ -10,6 +10,7 @@ def get_the_email_of_a_townhal_from_its_webpage(url)
   return page_1.css('/html/body/div/main/section[2]/div/table/tbody/tr[4]/td[2]').text
 
 end
+
 # Fonction permettant de lister toutes les URL des pages des mairies du val d'Oise du site annuaire-des-mairies.com
 def get_all_the_urls_of_val_doise_townhalls(url)
 

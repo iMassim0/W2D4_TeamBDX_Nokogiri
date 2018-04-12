@@ -2,7 +2,6 @@
 
 Exos Ruby_Scrapping&Parsing Day 4 on Week 2 - TeamBDX - @Massimo
 
-
 Exercices :
 
 + 1_app_mairie.rb
