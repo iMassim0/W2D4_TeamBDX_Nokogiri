@@ -2,7 +2,6 @@
 
 Exos Ruby_Scrapping&Parsing Day 4 on Week 2 - TeamBDX - @Massimo
 
-
 Exercices :
 
 + 1_app_mairie.rb
@@ -11,6 +10,6 @@ Exercices :
 
 + 3_incubateurs.rb
 
-*1_app_mairie.rb fonctionne avec le fichier townhall_list.yml. S'il n'est pas présent dans le dossier courant. S'il n'est pas présent, Enelevez les # devant les commentaires à l'intérieur du fichier et faire tourner l'app au moins une fois pour création.*
+*1_app_mairie.rb fonctionne avec le fichier townhall_list.yml.*
 
-### Made by Team_BDX : Baptiste ROGEON (@bab) & Maxime FLEURY (@Massimo)
+### Made by Team_BDX : Maxime FLEURY (@Massimo) with help by Baptiste ROGEON (@bab)
