@@ -1,0 +1,7 @@
+--- !ruby/object:Nokogiri::XML::NodeSet
+document: !ruby/object:Nokogiri::HTML::Document
+  decorators: 
+  node_cache:
+  - !ruby/object:Nokogiri::XML::Element {}
+  errors: []
+namespace_cache: []

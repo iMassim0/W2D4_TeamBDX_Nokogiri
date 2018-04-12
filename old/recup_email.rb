@@ -63,17 +63,14 @@ def get_all_the_urls_of_val_doise_townhalls(url)
 
     list = [YAML.load_file('mairie_list.yml')]
 
-    if list.empty?
-      mairie_links.each do |key, url|
-        list << key
-        list << get_the_email_of_a_townhal_from_its_webpage(url)
-         print url[0].length
-      end
-
-    File.write('mairie_list.yml', YAML.dump(list))
+      # mairie_links.each do |key, url|
+      #   list << key
+      #   list << get_the_email_of_a_townhal_from_its_webpage(url)
+      #    print url[0].length
+      # end
 
     else
-      print list[0].split(", ")
+      print list[0]
     end
 
   end
